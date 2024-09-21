@@ -1,0 +1,150 @@
+@keyframes jump {
+	0% {
+		transform: translateY(0) rotate(-10deg);
+	}
+	10% {
+		transform: translateY(-10px) rotate(0deg);
+	}
+	20% {
+		transform: translateY(0) rotate(10deg);
+	}
+	30% {
+		transform: translateY(-10px) rotate(-10deg);
+	}
+	40% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(10deg);
+	}
+	60% {
+		transform: translateY(0) rotate(-10deg);
+	}
+	70% {
+		transform: translateY(-10px) rotate(0deg);
+	}
+	80% {
+		transform: translateY(0) rotate(10deg);
+	}
+	90% {
+		transform: translateY(-10px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(0) rotate(-10deg);
+	}
+}
+
+.jump {
+	animation: jump 1.5s infinite;
+}
+
+@keyframes m {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.m {
+	animation: m 1.75s infinite;
+}
+
+@keyframes i {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.i {
+	animation: i 2s infinite;
+}
+
+@keyframes r {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.r {
+	animation: r 2.25s infinite;
+}
+
+@keyframes x {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.x {
+	animation: x 2.5s infinite;
+}
+
+@keyframes c {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.c {
+	animation: c 2.75s infinite;
+}
+@keyframes l {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.l {
+	animation: l 3s infinite;
+}
+
+@keyframes e {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50px);
+	}
+}
+
+.e {
+	animation: e 3.2s infinite;
+}

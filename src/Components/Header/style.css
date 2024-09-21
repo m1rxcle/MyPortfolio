@@ -1,0 +1,35 @@
+/* Определяем анимацию "плавающий пузырь" */
+@keyframes floating-bubble {
+	0% {
+		border-radius: 0;
+	}
+	25% {
+		border-radius: 100% 2% 100% 2% / 2% 2% 100% 100%;
+	}
+	50% {
+		border-radius: 100% 100% 100% 2% / 3% 100% 100% 100%;
+	}
+	75% {
+		border-radius: 100% 100% 100% 2% / 100% 100% 100% 2%;
+	}
+	100% {
+		border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
+	}
+}
+/* Добавляем класс анимации */
+.floating-border-on-hover {
+	animation: floating-bubble 2.5s ease-in-out;
+}
+
+@keyframes bigger {
+	100% {
+		transform: scale(1.1);
+	}
+	0% {
+		transform: scale(1.1);
+	}
+}
+
+.bigger:hover {
+	animation: bigger 1s ease-in-out infinite;
+}
