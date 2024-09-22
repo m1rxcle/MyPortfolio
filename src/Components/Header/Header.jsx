@@ -31,8 +31,8 @@ const Header = () => {
 						</h2>
 
 						<p className="font-montserrat px-5 text-base text-secondary mb-[38px] md:text-start md:w-[400px] md:px-0">
-							Hi, i`am Denis Novikov. A passionate Front-end React Developer
-							based in Kaliningrad ,
+							Hi, Im Denis Novikov. A passionate Front-end React Developer based
+							in Kaliningrad ,
 							<span className="inline-flex items-center  ">
 								Russia <img className="ml-2 " src={rusFlag} alt="" />
 							</span>
