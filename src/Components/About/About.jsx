@@ -18,7 +18,7 @@ const About = () => {
 					<h2 className="text-justify font-bold text-lg mb-1 px-5 leading-tight font-montserrat w-full md:w-[350px] md:px-0 ">
 						A dedicated Front-end Developer based in Kaliningrad, Russia
 					</h2>
-					<p className="text-justify text-secondary font-montserrat w-full px-5 md:text-[11px] md:w-[354px] md:px-0">
+					<p className="text-justify text-secondary font-montserrat font-semibold w-full px-5 md:text-[11px] md:w-[354px] md:px-0">
 						As a junior Front-end Developer. I possess on impressive arsenal of
 						skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
 						in designing and maintaining responsive websites that offer a smooth
