@@ -20,7 +20,7 @@ const Header = () => {
 		<>
 			<Element name="home" className="md:min-h-[891px] ">
 				<header className="flex flex-col text-center mb-56 mt-48 md:flex-row md:justify-center md:items-center md:mb-96 ">
-					<div className="md:mr-32">
+					<div className="md:mr-24">
 						<h2 className="text-4xl font-montserrat font-extrabold mb-[38px] md:text-start  ">
 							Front-End React
 							<br />
