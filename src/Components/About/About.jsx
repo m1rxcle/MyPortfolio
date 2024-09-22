@@ -1,12 +1,13 @@
 import desktop from "./../../assets/Images/about.png"
 import { Element } from "react-scroll"
+import "./style.css"
 
 const About = () => {
 	return (
 		<Element name="about" className="mb-[230px]">
 			<div className="text-center w-full md:flex md:justify-center md:items-start md:gap-16 ">
 				<img
-					className="hidden md:block md:h-[217px] md:w-[304px]"
+					className="hidden md:block md:h-[217px] md:w-[304px] onShadow rounded-2xl"
 					src={desktop}
 					loading="lazy"
 				/>
