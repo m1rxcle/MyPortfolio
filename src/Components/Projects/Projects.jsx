@@ -42,7 +42,7 @@ const Projects = () => {
 								style={{ color: "#000000" }}
 							/>
 						</h3>
-						<p className="font-semibold text-sm text-secondary mb-4 text-center w-full leading-tight font-montserrat md:w-64">
+						<p className="font-semibold text-sm text-secondary mb-4 text-justify w-full leading-tight font-montserrat md:w-64">
 							The project is a platform for finding car parts. Users can enter a
 							brand and model of the car to quickly find compatible
 							parts.Additionally, users can filter parts and gears based on
@@ -89,7 +89,7 @@ const Projects = () => {
 							GUITAR SCHOOL{" "}
 							<FontAwesomeIcon icon={faGuitar} style={{ color: "#ff662c" }} />
 						</h3>
-						<p className="font-semibold text-sm text-secondary mb-4 text-center w-full leading-tight font-montserrat md:w-64">
+						<p className="font-semibold text-sm text-secondary mb-4 text-justify w-full leading-tight font-montserrat md:w-64">
 							Our guitar school offers training for all levels – from beginners
 							to advanced guitarists. Experienced teachers will help to master
 							the accommodation, rhythms and technique of playing on electric
