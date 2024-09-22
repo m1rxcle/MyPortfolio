@@ -9,10 +9,10 @@ const NavBar = () => {
 		setActive(!active)
 	}
 	return (
-		<nav className="fixed top-0 left-0 right-0 mx-auto bg-white flex justify-between items-center px-10 pt-5 z-10">
+		<nav className="text-center w-full py-3 fixed top-0 md:left-0 md:right-0 bg-white md:mx-auto  md:flex md:justify-between md:items-center md:px-10 md:pt-5 md:z-10 ">
 			<button
 				onClick={handleHover}
-				className="cursor-pointer font-montserrat  font-extrabold text-2xl transition-transform duration-500 ease-in-out appear"
+				className="cursor-pointer font-montserrat font-extrabold text-2xl transition-transform duration-500 ease-in-out appear"
 			>
 				{active ? (
 					<>
@@ -27,7 +27,7 @@ const NavBar = () => {
 					"m1rxcle.dev"
 				)}
 			</button>
-			<ul className="flex gap-6 font-bold ">
+			<ul className="hidden md:flex md:gap-6 md:font-bold">
 				<li>
 					<Link
 						className="font-montserrat cursor-pointer"

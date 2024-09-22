@@ -19,9 +19,9 @@ const Header = () => {
 	return (
 		<>
 			<Element name="home" className="min-h-[891px] ">
-				<header className="flex justify-center items-center mb-96 mt-48">
-					<div className="mr-20">
-						<h2 className="text-4xl font-montserrat  font-extrabold mb-[38px] ">
+				<header className="flex flex-col text-center mb-96 mt-48 md:flex-row md:justify-center md:items-center ">
+					<div className="md:mr-32">
+						<h2 className="text-4xl font-montserrat font-extrabold mb-[38px] md:text-start  ">
 							Front-End React
 							<br />
 							<span className="inline-flex  items-center">
@@ -30,14 +30,14 @@ const Header = () => {
 							</span>
 						</h2>
 
-						<p className="font-montserrat  text-base text-secondary mb-[38px]">
-							Hi, i`am Denis Novikov. A passionate Front-end React <br />
-							Developer based in Kaliningrad ,
+						<p className="font-montserrat px-5 text-base text-secondary mb-[38px] md:text-start md:w-[400px] md:px-0">
+							Hi, i`am Denis Novikov. A passionate Front-end React Developer
+							based in Kaliningrad ,
 							<span className="inline-flex items-center  ">
 								Russia <img className="ml-2 " src={rusFlag} alt="" />
 							</span>
 						</p>
-						<div className="flex">
+						<div className="flex justify-center mb-10 md:flex-row md:justify-start md:mb-0 ">
 							<a target="_blank" href="https://github.com/m1rxcle">
 								<img
 									src={gitHub}
@@ -53,11 +53,11 @@ const Header = () => {
 						</div>
 					</div>
 					<img
-						className="w-[232px] h-[230px] rounded-full border-4 border-dark transition-transform duration-500 ease-out floating-border-on-hover"
+						className="mx-auto md:mx-0 w-[232px] h-[230px] rounded-full border-4 border-dark transition-transform duration-500 ease-out floating-border-on-hover"
 						src={me}
 					/>
 				</header>
-				<footer className="flex justify-center items-center mr-28 ">
+				<footer className="hidden md:flex md:justify-center md:items-center ">
 					<div className="mr-14">
 						<div className="flex gap-3 ">
 							<h3 className="font-semibold font-montserrat text-lg">

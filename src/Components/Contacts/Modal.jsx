@@ -1,5 +1,4 @@
-import { Button } from "antd"
-import { Modal } from "antd"
+import { Button, Modal } from "antd"
 
 // eslint-disable-next-line react/prop-types
 const FormModal = ({ open, onClose, loading, handleOk }) => {

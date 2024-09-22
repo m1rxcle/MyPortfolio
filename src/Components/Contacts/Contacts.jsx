@@ -25,7 +25,7 @@ const Contacts = () => {
 	}
 	return (
 		<Element name="contacts" className="mb-[221px] min-h-44">
-			<div className="text-start pl-[30%]">
+			<div className="text-center w-full md:text-start md:pl-8 lg:text-start lg:pl-40 xl:text-start xl:pl-80 2xl:text-start 2xl:pl-[30%]">
 				<h1 className="font-bold text-xs text-primary mb-4 font-montserrat">
 					CONTACTS
 				</h1>
@@ -39,14 +39,14 @@ const Contacts = () => {
 					/>
 				</h2>
 			</div>
-			<div className="flex justify-center pr-[14%] ">
-				<div className="flex justify-center items-center gap-4 mr-7">
+			<div className="flex justify-center md:pr-[14%] ">
+				<div className="flex flex-col items-start md:flex-row md:justify-center md:items-center md:gap-4 md:mr-7">
 					<FontAwesomeIcon
 						icon={faMapLocationDot}
 						style={{ color: "#000000" }}
 					/>
 					<p
-						className="flex flex-col text-xs font-bold font-montserrat"
+						className="flex flex-col text-xs font-bold font-montserrat mb-5"
 						href="#"
 					>
 						<span className=" font-montserrat">Location</span>
