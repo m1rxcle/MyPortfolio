@@ -50,7 +50,7 @@ const FormModal = ({ open, onClose, loading, handleOk }) => {
 					className="p-1 outline-secondary border-secondary mb-2 rounded-md"
 					name="phone"
 					type="tel"
-					placeholder="+7 (921) 263-27-95"
+					placeholder="+7 (995) 325-51-13"
 					required
 					autoComplete="off"
 				/>

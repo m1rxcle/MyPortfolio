@@ -39,14 +39,14 @@ const Contacts = () => {
 					/>
 				</h2>
 			</div>
-			<div className="flex justify-center md:pr-[14%] ">
+			<div className="flex md:items-start justify-center md:pr-[14%] ">
 				<div className="flex flex-col items-start md:flex-row md:justify-center md:items-center md:gap-4 md:mr-7">
 					<FontAwesomeIcon
 						icon={faMapLocationDot}
 						style={{ color: "#000000" }}
 					/>
 					<p
-						className="flex flex-col text-xs font-bold font-montserrat mb-5"
+						className="flex flex-col text-xs font-bold font-montserrat mb-5 md:mb-0"
 						href="#"
 					>
 						<span className=" font-montserrat">Location</span>
