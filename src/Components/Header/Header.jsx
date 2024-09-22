@@ -18,8 +18,8 @@ import "./style.css"
 const Header = () => {
 	return (
 		<>
-			<Element name="home" className="min-h-[891px] ">
-				<header className="flex flex-col text-center mb-96 mt-48 md:flex-row md:justify-center md:items-center ">
+			<Element name="home" className="md:min-h-[891px] ">
+				<header className="flex flex-col text-center mb-56 mt-48 md:flex-row md:justify-center md:items-center md:mb-96 ">
 					<div className="md:mr-32">
 						<h2 className="text-4xl font-montserrat font-extrabold mb-[38px] md:text-start  ">
 							Front-End React
@@ -30,14 +30,14 @@ const Header = () => {
 							</span>
 						</h2>
 
-						<p className="font-montserrat px-5 text-base text-secondary mb-[38px] md:text-start md:w-[400px] md:px-0">
+						<p className="font-montserrat px-5 text-base text-secondary mb-5 md:mb-[38px] md:text-start md:w-[400px] md:px-0">
 							Hi, Im Denis Novikov. A passionate Front-end React Developer based
 							in Kaliningrad,
 							<span className="inline-flex items-center  ">
 								Russia <img className="ml-2 " src={rusFlag} alt="" />
 							</span>
 						</p>
-						<div className="flex justify-center mb-10 md:flex-row md:justify-start md:mb-0 ">
+						<div className="flex justify-center mb-5 md:flex-row md:justify-start md:mb-0 ">
 							<a target="_blank" href="https://github.com/m1rxcle">
 								<img
 									src={gitHub}

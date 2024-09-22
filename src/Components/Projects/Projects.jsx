@@ -12,13 +12,13 @@ import { Element } from "react-scroll"
 
 const Projects = () => {
 	return (
-		<Element name="portfolio" className="mb-[400px]">
+		<Element name="portfolio" className="mb-[230px]">
 			<section className="mb-14">
-				<div className="text-center w-full md:text-start md:pl-8 lg:text-start lg:pl-40 xl:text-start xl:pl-80 2xl:text-start 2xl:pl-[30%]">
-					<h1 className="font-bold text-xs text-primary mb-4 font-montserrat">
+				<div className="text-center w-full md:text-start md:pl-20 lg:text-start lg:pl-40 xl:text-start xl:pl-80 2xl:text-start 2xl:pl-[30%]">
+					<h1 className="font-bold text-xs text-primary mb-2 font-montserrat md:mb-4">
 						PORTFOLIO
 					</h1>
-					<h2 className="px-5 font-bold text-base mb-7 font-montserrat md:px-0">
+					<h2 className="px-5 font-bold text-base  font-montserrat mb-2 md:px-0 md:mb-7">
 						Each project is a unique piece of development{" "}
 						<FontAwesomeIcon
 							className="ml-[4px]"
@@ -29,7 +29,7 @@ const Projects = () => {
 				</div>
 				<div className="flex flex-col  px-5  md:flex-row md:justify-center md:items-center md:gap-[100px] ">
 					<img
-						className="rounded-xl mb-2 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
+						className="rounded-xl mb-4 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
 						src={mazdaProject}
 					/>
 

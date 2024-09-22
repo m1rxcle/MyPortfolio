@@ -13,7 +13,7 @@ const MyPortfolio = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false)
-		}, 3000)
+		}, 2550)
 	}, [loading])
 	return (
 		<>

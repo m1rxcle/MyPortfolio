@@ -25,7 +25,7 @@ const Contacts = () => {
 	}
 	return (
 		<Element name="contacts" className="mb-[221px] min-h-44">
-			<div className="text-center w-full md:text-start md:pl-8 lg:text-start lg:pl-40 xl:text-start xl:pl-80 2xl:text-start 2xl:pl-[30%]">
+			<div className="text-center w-full md:text-start md:pl-20 lg:text-start lg:pl-40 xl:text-start xl:pl-80 2xl:text-start 2xl:pl-[30%]">
 				<h1 className="font-bold text-xs text-primary mb-4 font-montserrat">
 					CONTACTS
 				</h1>
