@@ -4,16 +4,14 @@ import CardForFirst from "./Cards/CardForFirst"
 import CardForSecond from "./Cards/CardForSecond"
 
 import "./style.css"
+import PortfolioTitle from "./PortfolioTitle"
 
 const Projects = () => {
 	return (
 		<Element name="portfolio" className="mb-[480px]">
-			<section className="mb-14">
-				<CardForFirst />
-			</section>
-			<section className="mb-14">
-				<CardForSecond />
-			</section>
+			<PortfolioTitle />
+			<CardForFirst />
+			<CardForSecond />
 		</Element>
 	)
 }
