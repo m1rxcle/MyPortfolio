@@ -1,11 +1,12 @@
 import { useState } from "react"
+import { useEffect } from "react"
+
 import About from "./About/About"
 import Contacts from "./Contacts/Contacts"
 import Footer from "./Footer/Footer"
 import Header from "./Header/Header"
 import NavBar from "./NavBar/NavBar"
 import Projects from "./Projects/Projects"
-import { useEffect } from "react"
 import Loader from "./Loader/Loader"
 
 const MyPortfolio = () => {
@@ -18,7 +19,7 @@ const MyPortfolio = () => {
 	return (
 		<>
 			{loading ? (
-				<div className="bg-[#e6e6e6]  w-full h-300px">
+				<div className="bg-[#f3f3f381] w-full h-300px ">
 					<Loader />
 				</div>
 			) : (
