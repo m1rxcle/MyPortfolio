@@ -12,8 +12,20 @@ import sass from "./../../assets/Icons/sass.png"
 import html from "./../../assets/Icons/html.png"
 
 import { Element } from "react-scroll"
+import { motion } from "framer-motion"
 
 import "./style.css"
+
+const textAnimation = {
+	hidden: {
+		x: -100,
+		opacity: 0,
+	},
+	visible: {
+		x: 0,
+		opacity: 1,
+	},
+}
 
 const Header = () => {
 	return (
@@ -21,14 +33,20 @@ const Header = () => {
 			<Element name="home" className="md:min-h-[891px] ">
 				<header className="flex flex-col text-center mb-56 mt-48 md:flex-row md:justify-center md:items-center md:mb-96 ">
 					<div className="md:mr-24">
-						<h2 className="text-4xl font-montserrat font-extrabold mb-[38px] md:text-start  ">
+						<motion.h2
+							initial="hidden"
+							whileInView="visible"
+							variants={textAnimation}
+							viewport={{ once: true }}
+							className="text-4xl font-montserrat font-extrabold mb-[38px] md:text-start  "
+						>
 							Front-End React
 							<br />
 							<span className="inline-flex  items-center">
 								Developer
 								<img className="ml-2 pt-2" src={handShake} alt="handShake" />
 							</span>
-						</h2>
+						</motion.h2>
 
 						<p className="font-montserrat px-5 text-base text-secondary mb-5 md:mb-[38px] md:text-start md:w-[400px] md:px-0">
 							Hi, Im Denis Novikov. A passionate Front-end React Developer based

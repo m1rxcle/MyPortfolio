@@ -1,31 +1,17 @@
 import { Link } from "react-scroll"
 import "./style.css"
 import { useState } from "react"
-import { faFaceSmileWink } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 const NavBar = () => {
-	const [active, setActive] = useState(false)
-	const handleHover = () => {
-		setActive(!active)
-	}
+	const [clickName, setClickName] = useState(false)
+	const handleClick = () => setClickName((prev) => !prev)
 	return (
-		<nav className="text-center w-full py-3 fixed top-0 md:left-0 md:right-0 bg-white md:mx-auto  md:flex md:justify-between md:items-center md:px-10 md:pt-5 md:z-10 ">
+		<nav className="text-center w-full py-3 fixed top-0  z-10 md:left-0 md:right-0 bg-white md:mx-auto  md:flex md:justify-between md:items-center md:px-10 md:pt-5 md:z-10 ">
 			<button
-				onClick={handleHover}
-				className="cursor-pointer font-montserrat font-extrabold text-2xl transition-transform duration-500 ease-in-out appear"
+				onClick={handleClick}
+				className="font-montserrat font-extrabold text-2xl transition-transform duration-500 ease-in-out appear"
 			>
-				{active ? (
-					<>
-						m1rxcle.dev
-						<FontAwesomeIcon
-							className="right"
-							icon={faFaceSmileWink}
-							style={{ color: "#000000" }}
-						/>
-					</>
-				) : (
-					"m1rxcle.dev"
-				)}
+				{clickName ? <span> ( ◡‿◡ *) </span> : <span>m1rxcle.dev</span>}
 			</button>
 			<ul className="hidden md:flex md:gap-6 md:font-bold">
 				<li>

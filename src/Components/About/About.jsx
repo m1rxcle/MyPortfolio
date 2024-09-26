@@ -2,10 +2,31 @@ import desktop from "./../../assets/Images/about.png"
 import { Element } from "react-scroll"
 import "./style.css"
 
+import { motion } from "framer-motion"
+
+const aboutAnimation = {
+	hidden: {
+		y: 100,
+		opacity: 0,
+	},
+	visible: (custom) => ({
+		y: 0,
+		opacity: 1,
+		transition: { delay: custom * 0.4 },
+	}),
+}
+
 const About = () => {
 	return (
 		<Element name="about" className="mb-[230px]">
-			<div className="text-center w-full md:flex md:justify-center md:items-start md:gap-16 ">
+			<motion.div
+				initial="hidden"
+				whileInView="visible"
+				viewport={{ amount: 0.2, once: true }}
+				variants={aboutAnimation}
+				custom={1}
+				className="text-center w-full md:flex md:justify-center md:items-start md:gap-16 "
+			>
 				<img
 					className="hidden md:block md:h-[217px] md:w-[304px] onShadow rounded-2xl"
 					src={desktop}
@@ -29,7 +50,7 @@ const About = () => {
 						produce outstanding web applications.
 					</p>
 				</div>
-			</div>
+			</motion.div>
 		</Element>
 	)
 }
