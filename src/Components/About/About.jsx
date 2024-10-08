@@ -22,7 +22,7 @@ const About = () => {
 			<motion.div
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ amount: 0.2, once: true }}
+				viewport={{ once: true }}
 				variants={aboutAnimation}
 				custom={1}
 				className="text-center w-full md:flex md:justify-center md:items-start md:gap-16 "

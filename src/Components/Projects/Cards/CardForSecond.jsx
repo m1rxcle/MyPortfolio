@@ -6,11 +6,39 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 
 import { faGuitar } from "@fortawesome/free-solid-svg-icons"
 
+import { motion } from "framer-motion"
+
 const CardForSecond = () => {
+	const imgAnimation = {
+		hidden: {
+			x: -500,
+			opacity: 0,
+		},
+		visible: {
+			x: 0,
+			opacity: 1,
+		},
+	}
+	const descAnimation = {
+		hidden: {
+			x: 500,
+			opacity: 0,
+		},
+		visible: {
+			x: 0,
+			opacity: 1,
+		},
+	}
 	return (
 		<section className="mb-14">
 			<div className="flex flex-col  px-5  md:flex-row md:justify-center md:items-center md:gap-[100px] ">
-				<div>
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ amount: 0.2, once: true }}
+					transition={{ delay: 0.5 }}
+					variants={imgAnimation}
+				>
 					<h3 className="text-base font-bold mb-4 text-center font-montserrat ">
 						GUITAR SCHOOL{" "}
 						<FontAwesomeIcon icon={faGuitar} style={{ color: "#ff662c" }} />
@@ -50,8 +78,13 @@ const CardForSecond = () => {
 							</span>
 						</a>
 					</div>
-				</div>
-				<img
+				</motion.div>
+				<motion.img
+					initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ delay: 0.5 }}
+					variants={descAnimation}
 					className="onShadow rounded-xl mb-2 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
 					src={guitarSchool}
 				/>

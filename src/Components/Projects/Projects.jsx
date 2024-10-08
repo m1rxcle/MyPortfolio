@@ -2,9 +2,9 @@ import { Element } from "react-scroll"
 
 import CardForFirst from "./Cards/CardForFirst"
 import CardForSecond from "./Cards/CardForSecond"
+import PortfolioTitle from "./PortfolioTitle"
 
 import "./style.css"
-import PortfolioTitle from "./PortfolioTitle"
 
 const Projects = () => {
 	return (
