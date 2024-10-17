@@ -46,7 +46,7 @@ const About = () => {
 						user experience. My expertise lies in crafting dynamic, engaging
 						interfaces through writing clean and optimized code and utilizing
 						cutting-edge development tools and techniques. I am also a team
-						player who thrives in colloborating with cross-functional teams to
+						player who thrives in collaborating with cross-functional teams to
 						produce outstanding web applications.
 					</p>
 				</div>
