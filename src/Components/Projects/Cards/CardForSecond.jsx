@@ -19,7 +19,7 @@ const CardForSecond = () => {
 					</h3>
 					<p className="font-semibold text-sm text-secondary mb-4 text-justify w-full leading-tight font-montserrat md:w-64">
 						Our guitar school offers training for all levels – from beginners to advanced guitarists. Experienced teachers will help to master the
-						accommodation, rhythms and technique of playing on electric guitar or acoustics.
+						accommodation, rhythms and technique of playing on electric guitar of acoustics.
 					</p>
 					<div className="flex justify-center gap-12 mb-5 md:flex-row md:justify-around ">
 						<span className="font-bold text-base font-montserrat">HTML</span>
