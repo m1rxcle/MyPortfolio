@@ -11,6 +11,18 @@ export const CardForThird = () => {
 	return (
 		<section className="mb-14">
 			<div className="flex flex-col  px-5  md:flex-row md:justify-center md:items-center md:gap-[100px] ">
+				<div
+					className="cursor-pointer hover:scale-110 transition-all duration-200 ease-linear"
+					onMouseEnter={() => videoRef.current?.play()}
+					onMouseLeave={() => videoRef.current?.pause()}
+				>
+					<video
+						ref={videoRef}
+						className="onShadow rounded-xl mb-2 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
+					>
+						<source src={miraFoodVideo} type="video/mp4" />
+					</video>
+				</div>
 				<div>
 					<h3 className="text-base font-bold mb-4 text-center font-montserrat ">
 						MIRA FOOD <FontAwesomeIcon icon={faPizzaSlice} style={{ color: "#ff662c" }} />
@@ -37,18 +49,6 @@ export const CardForThird = () => {
 							</span>
 						</a>
 					</div>
-				</div>
-				<div
-					className="cursor-pointer hover:scale-110 transition-all duration-200 ease-linear"
-					onMouseEnter={() => videoRef.current?.play()}
-					onMouseLeave={() => videoRef.current?.pause()}
-				>
-					<video
-						ref={videoRef}
-						className="onShadow rounded-xl mb-2 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
-					>
-						<source src={miraFoodVideo} type="video/mp4" />
-					</video>
 				</div>
 			</div>
 		</section>
