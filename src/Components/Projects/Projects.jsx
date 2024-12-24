@@ -5,6 +5,7 @@ import CardForSecond from "./Cards/CardForSecond"
 import PortfolioTitle from "./PortfolioTitle"
 
 import "./style.css"
+import { CardForThird } from "./Cards/CardForThird"
 
 const Projects = () => {
 	return (
@@ -12,6 +13,7 @@ const Projects = () => {
 			<PortfolioTitle />
 			<CardForFirst />
 			<CardForSecond />
+			<CardForThird />
 		</Element>
 	)
 }
