@@ -18,7 +18,7 @@ export const CardForThird = () => {
 				>
 					<video
 						ref={videoRef}
-						className="onShadow rounded-xl mb-2 items-center mx-auto h-[230px] w-[300px] md:mb-0 md:mx-0 md:h-[235px] md:w-[333px]"
+						className="onShadow rounded-xl mb-2 items-center mx-auto h-[180px] w-[320px] md:h-[180px] md:w-[320px] md:mb-0 md:mx-0 pointer-events-none"
 					>
 						<source src={miraFoodVideo} type="video/mp4" />
 					</video>
